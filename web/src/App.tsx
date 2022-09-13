@@ -1,17 +1,5 @@
-interface ButtonProps {
-  text: string;
-}
-
-function Button({ text }: ButtonProps) {
-  return <button>{text}</button>;
-}
+import './styles/main.css';
 
 export function App() {
-  return (
-    <>
-      <Button text="send" />
-      <Button text="submit" />
-      <Button text="reset" />
-    </>
-  );
+  return <div className="w-8 h-8 bg-violet-500"></div>;
 }
