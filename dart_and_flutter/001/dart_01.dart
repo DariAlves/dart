@@ -1,6 +1,8 @@
 void main() {
   variables();
   types();
+  printNull();
+  constAndFinal();
 }
 
 void variables() {
@@ -39,6 +41,7 @@ void types() {
   printAList(list);
   printAList(list_2);
   printAList(list_3);
+  print('\n');
 }
 
 /*
@@ -55,3 +58,29 @@ void types() {
 * The value null (Null)
 *
 * */
+
+void printNull() {
+  String? value;
+  bool? isNull;
+
+  if (value == null) {
+    print("It\'s $isNull");
+  } else {
+    print("It\'s not $isNull");
+  }
+}
+
+void constAndFinal() {
+  print(User.name.toUpperCase());
+  User user = new User(37);
+  print(user.age);
+
+  // user.age = 50; error
+}
+
+class User {
+  final int? age;
+  static const String name = 'dari';
+
+  User(this.age);
+}
