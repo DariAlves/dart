@@ -10,6 +10,7 @@ void main() {
   print(programador_1.hashCode);
   print(programador_2.hashCode);
   print(identical(programador_1, programador_2));
+  // assert(identical(programador_1, programador_2));
 }
 
 class Programador {
