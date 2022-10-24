@@ -11,7 +11,7 @@ void main() {
 class Programador {
   String? nome;
   List<String> tarefas = [];
-  List<String> linguagens;
+  List<String>? linguagens;
 
   Programador({this.nome = 'default', this.linguagens = const []});
 }
